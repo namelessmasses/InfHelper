@@ -22,6 +22,11 @@ namespace InfHelper.Models
             return string.Compare(Name, name, StringComparison.OrdinalIgnoreCase) == 0;
         }
 
+        public override int GetHashCode()
+        {
+            return Name.GetHashCode();
+        }
+
         public override string ToString()
         {
             return $"[Category]: {Name}";
