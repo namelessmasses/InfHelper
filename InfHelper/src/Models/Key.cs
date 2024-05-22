@@ -10,6 +10,11 @@ namespace InfHelper.Models
         /// </summary>
         public string Id { get; set; }
 
+        public override string ToString()
+        {
+            return $"[Key]: {Id}";
+        }
+
         /// <summary>
         /// Values separated by comma, can be inside quotes e.g. "value"
         /// </summary>

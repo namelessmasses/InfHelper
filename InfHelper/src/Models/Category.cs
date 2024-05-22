@@ -21,6 +21,12 @@ namespace InfHelper.Models
         {
             return string.Compare(Name, name, StringComparison.OrdinalIgnoreCase) == 0;
         }
+
+        public override string ToString()
+        {
+            return $"[Category]: {Name}";
+        }
+
         public Key this[string id]
         {
             get
